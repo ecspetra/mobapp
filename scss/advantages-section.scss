@@ -1,0 +1,105 @@
+@import "tmp.scss";
+
+.advantages-container {
+  padding: 80px 40px 100px 40px;
+  position: relative;
+  .advantages-container__headline {
+    text-align: center;
+    font-size: $med-headline-fs;
+    line-height: $med-headline-lh;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    span {
+      color: $color-accent;
+    }
+  }
+  .advantages-container__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+    -moz-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+    box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+    margin: 60px 0px 0px 0px;
+
+    i {
+      font-size: 28px;
+      color: $color-accent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .advantages-container__line {
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    background-color: #dddddd;
+    width: 1px;
+    height: 380px;
+  }
+
+  .advantages-container__block-left {
+    margin: 140px 0px;
+
+    .advantages-container__block-left__img {
+      padding: 0px 60px 0px 0px;
+      svg {
+        max-width: 600px;
+        height: auto;
+      }
+    }
+    .advantages-container__block-left__text {
+      text-align: left;
+      padding: 40px 0px 0px 80px;
+      background-image: url("../img/01.png");
+      background-repeat: no-repeat;
+      background-position: top left;
+
+      .advantages-container__block-left__text__headline {
+        font-size: $med-headline-fs;
+        line-height: $med-headline-lh;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .advantages-container__block-left__text__paragraph {
+        color: $paragraph-color;
+        font-size: $small-paragraph-fs;
+        line-height: $small-paragraph-lh;
+        margin: 45px 0px 55px 0px;
+      }
+    }
+  }
+  .advantages-container__block-right {
+    margin: 140px 0px;
+    .advantages-container__block-right__img {
+      padding: 0px 00px 0px 20px;
+      svg {
+        max-width: 600px;
+        height: auto;
+      }
+    }
+    .advantages-container__block-right__text {
+      text-align: right;
+      padding: 40px 80px 0px 0px;
+      background-image: url("../img/02.png");
+      background-repeat: no-repeat;
+      background-position: top right;
+      .advantages-container__block-right__text__headline {
+        font-size: $med-headline-fs;
+        line-height: $med-headline-lh;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .advantages-container__block-right__text__paragraph {
+        color: $paragraph-color;
+        font-size: $small-paragraph-fs;
+        line-height: $small-paragraph-lh;
+        margin: 45px 0px 55px 0px;
+      }
+    }
+  }
+}

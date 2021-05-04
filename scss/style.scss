@@ -2,8 +2,12 @@
 @import "normalize.scss";
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "SF Old Republic", sans-serif;
   color: #1c1c1c;
+}
+
+.wrapper {
+  padding: 0;
 }
 
 .wrapper__container {
@@ -12,22 +16,23 @@ body {
 
 .cta-button {
   background-color: $color-accent;
-  border: 0;
+  border: 2px solid $color-accent;
   outline: 0;
   box-shadow: 0;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 20px 40px;
+  // padding: 20px 40px;
+  height: 64px;
   font-size: $btn-fs;
   line-height: $btn-lh;
-  border-radius: 30px;
+  border-radius: 32px;
   color: white;
   width: 100%;
-}
 
-.hero-container__text__more-btn {
-  background-color: $basic-gray;
-  color: $color-accent;
+  i {
+    margin: 0px 10px 0px 0px;
+    font-size: 24px;
+  }
 }
 
 button:active,
@@ -36,6 +41,7 @@ button:hover {
   -webkit-box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
   -moz-box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
   box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
+  border: 2px solid #29e289 !important;
 }
 
 button:hover {
@@ -43,15 +49,46 @@ button:hover {
 }
 button:focus {
   background-color: $color-accent !important;
+  border: 2px solid $color-accent !important;
+}
+
+.hero-container__text__more-btn {
+  background-color: $basic-gray;
+  color: $color-accent;
+  background-color: white;
+}
+
+.hero-container__text__more-btn:active,
+.hero-container__text__more-btn:focus,
+.hero-container__text__more-btn:hover {
+  box-shadow: none !important;
+  border: 2px solid $basic-gray !important;
+}
+
+.hero-container__text__more-btn:hover {
+  background-color: $basic-gray !important;
+  color: $color-accent;
+}
+.hero-container__text__more-btn:focus {
+  background-color: $basic-gray !important;
+}
+
+.divider-container {
+  padding: 0px 40px;
+  .divider-container__line {
+    background-color: #dddddd;
+    height: 1px;
+    width: 100%;
+  }
 }
 
 .hero-container {
   .hero-container__text {
-    padding: 0px 60px 0px 0px;
+    padding: 0px 80px 0px 0px;
     .hero-container__text__headline {
       font-size: $large-headline-fs;
       line-height: $large-headline-lh;
-      font-weight: 900;
+      font-weight: 700;
       text-transform: capitalize;
 
       span {
@@ -105,3 +142,5 @@ button:focus {
 }
 
 @import "services-section.scss";
+@import "advantages-section.scss";
+@import "reviews-section.scss";

@@ -1,17 +1,97 @@
-/* Error: Undefined variable.
- *   ,
- * 5 |       color: $paragraph-color;
- *   |              ^^^^^^^^^^^^^^^^
- *   '
- *   scss\services-section.scss 5:14  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 5 \2502        color: $paragraph-color;\d\a   \2502               ^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\services-section.scss 5:14  root stylesheet";
+.services-container .services-container__text-block {
+  text-align: center;
 }
+.services-container .services-container__text-block .services-container__text-block__preheadline {
+  color: #808080;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #1fc072;
+  margin: 0px 0px 45px 0px;
+}
+.services-container .services-container__text-block .services-container__text-block__headline {
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.services-container .services-container__text-block .services-container__text-block__paragraph {
+  color: #808080;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 45px 0px 60px 0px;
+}
+.services-container .services-container__services .services-container__services__item .services__item__content {
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+  -moz-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+  box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__icon {
+  background-color: #1fc072;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__icon i {
+  font-size: 28px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__headline {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 30px 0px 20px 0px;
+}
+.services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__paragraph {
+  color: #808080;
+  font-size: 16px;
+  line-height: 22px;
+}
+.services-container .services-container__services .services-container__services__item:nth-child(2) .services__item__content__icon {
+  background-color: #ff5c45;
+}
+.services-container .services-container__services .services-container__services__item:nth-child(3) .services__item__content__icon {
+  background-color: #ffd524;
+}
+.services-container .services-container__services .services-container__services__item:nth-child(4) .services__item__content__icon {
+  background-color: #1c1c1c;
+}
+.services-container .services-container__services .services-container__services__item:hover .services__item__content {
+  background-color: #1fc072;
+}
+.services-container .services-container__services .services-container__services__item:hover .services__item__content .services__item__content__icon {
+  background-color: white;
+}
+.services-container .services-container__services .services-container__services__item:hover .services__item__content .services__item__content__icon i {
+  color: #1fc072;
+}
+.services-container .services-container__services .services-container__services__item:hover .services__item__content .services__item__content__headline {
+  color: white;
+}
+.services-container .services-container__services .services-container__services__item:hover .services__item__content .services__item__content__paragraph {
+  color: white;
+}
+
+/*# sourceMappingURL=services-section.css.map */
