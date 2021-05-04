@@ -16,6 +16,7 @@
       line-height: $med-headline-lh;
       font-weight: 900;
       text-transform: capitalize;
+      white-space: nowrap;
     }
     .services-container__text-block__paragraph {
       color: $paragraph-color;

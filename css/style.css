@@ -279,6 +279,7 @@ button:focus {
   line-height: 44px;
   font-weight: 900;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 .services-container .services-container__text-block .services-container__text-block__paragraph {
   color: #808080;
