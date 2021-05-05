@@ -141,6 +141,21 @@ button:focus {
   }
 }
 
+.splide {
+  .splide__arrows {
+    .splide__arrow {
+      svg {
+        display: none;
+      }
+    }
+  }
+  .splide__track {
+  }
+  .splide__pagination {
+    left: 0 !important;
+  }
+}
+
 @import "services-section.scss";
 @import "advantages-section.scss";
 @import "reviews-section.scss";
