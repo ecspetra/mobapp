@@ -212,20 +212,20 @@ body {
   font-size: 24px;
 }
 
-button:active,
-button:focus,
-button:hover {
+.cta-button:active,
+.cta-button:focus,
+.cta-button:hover {
   -webkit-box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
   -moz-box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
   box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
   border: 2px solid #29e289 !important;
 }
 
-button:hover {
+.cta-button:hover {
   background-color: #29e289 !important;
 }
 
-button:focus {
+.cta-button:focus {
   background-color: #1fc072 !important;
   border: 2px solid #1fc072 !important;
 }
@@ -504,73 +504,19 @@ button:focus {
   color: white;
 }
 .reviews-container .reviews-container__reviews .reviews-slider {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  margin-bottom: 0px !important;
+  height: 300px;
+}
+.reviews-container .reviews-container__reviews .reviews-slider .carousel-inner {
   color: #1c1c1c;
-  width: 100%;
 }
-.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide {
-  max-width: 400px;
-  padding: 30px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.reviews-container .reviews-container__reviews .reviews-slider .carousel-inner .carousel-item {
   background-color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.9);
-  -moz-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.9);
-  box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.9);
+  display: block;
 }
-.reviews-container .reviews-container__reviews .reviews-slider .reviews-dots {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-.reviews-container .reviews-container__reviews .reviews-slider .reviews-dots li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 16px;
-  height: 16px;
-  margin: 20px;
-  padding: 0;
-  cursor: pointer;
-  border-radius: 50%;
-}
-.reviews-container .reviews-container__reviews .reviews-slider .reviews-dots li button {
-  font-size: 0;
-  line-height: 0;
-  padding: 0;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 0;
-  color: transparent;
-  outline: none;
-  background-color: white;
-  opacity: 0.3;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.reviews-container .reviews-container__reviews .reviews-slider .reviews-dots .slick-active button {
-  background: white;
-  opacity: 1;
+.reviews-container .reviews-container__reviews .reviews-slider .carousel-inner .carousel-item .carousel-caption {
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: 700;
 }
 .reviews-container .reviews-container__headline {
   font-size: 50px;

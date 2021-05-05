@@ -6,79 +6,27 @@
 
   .reviews-container__reviews {
     .reviews-slider {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      margin-bottom: 0px !important;
-      color: $basic-color;
-      width: 100%;
-
-      .slick-list {
-        .slick-track {
-          .slick-slide {
-            max-width: 400px;
-            padding: 30px;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-            background-color: white;
-            border-radius: 10px;
-            -webkit-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.9);
-            -moz-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.9);
-            box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.9);
+      height: 300px;
+      .carousel-indicators {
+      }
+      .carousel-inner {
+        color: $basic-color;
+        .carousel-item {
+          background-color: white;
+          display: block;
+          .carousel-caption {
+            font-size: $med-headline-fs;
+            line-height: $med-headline-lh;
+            font-weight: 700;
           }
         }
       }
-      .reviews-dots {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        li {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 16px;
-          height: 16px;
-          margin: 20px;
-          padding: 0;
-          cursor: pointer;
-          border-radius: 50%;
-
-          button {
-            font-size: 0;
-            line-height: 0;
-            padding: 0;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 0;
-            color: transparent;
-            outline: none;
-            background-color: white;
-            opacity: 0.3;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-          }
+      .carousel-control-prev {
+        .carousel-control-prev-icon {
         }
-        .slick-active {
-          button {
-            background: white;
-            opacity: 1;
-          }
+      }
+      .carousel-control-next {
+        .carousel-control-next-icon {
         }
       }
     }

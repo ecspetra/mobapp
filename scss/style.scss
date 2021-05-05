@@ -35,19 +35,19 @@ body {
   }
 }
 
-button:active,
-button:focus,
-button:hover {
+.cta-button:active,
+.cta-button:focus,
+.cta-button:hover {
   -webkit-box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
   -moz-box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
   box-shadow: 0px 4px 30px 0px rgba(31, 192, 114, 0.6) !important;
   border: 2px solid #29e289 !important;
 }
 
-button:hover {
+.cta-button:hover {
   background-color: #29e289 !important;
 }
-button:focus {
+.cta-button:focus {
   background-color: $color-accent !important;
   border: 2px solid $color-accent !important;
 }
