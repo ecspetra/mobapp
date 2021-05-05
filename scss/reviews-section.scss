@@ -6,27 +6,111 @@
 
   .reviews-container__reviews {
     .reviews-slider {
-      height: 300px;
-      .carousel-indicators {
-      }
-      .carousel-inner {
-        color: $basic-color;
-        .carousel-item {
-          background-color: white;
-          display: block;
-          .carousel-caption {
-            font-size: $med-headline-fs;
-            line-height: $med-headline-lh;
-            font-weight: 700;
+      padding: 0px 70px 0px 0px;
+
+      position: relative;
+
+      .slick-list {
+        .slick-track {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          .slick-slide {
+            background-color: $color-accent-dark;
+            padding: 25px 30px 30px 30px;
+            border-radius: 10px;
+
+            .reviews-slider__review__text {
+              margin: 0px 0px 25px 0px;
+              display: block;
+
+              i {
+                font-size: 22px;
+              }
+
+              i:first-child {
+                display: inline;
+                margin: 0px 10px 0px 0px;
+              }
+
+              i:last-child {
+                display: inline;
+                margin: 0px 0px 0px 10px;
+                vertical-align: sub;
+              }
+            }
+
+            .reviews-slider__review__author-img {
+              background-image: url("../img/user-1.jpg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;
+              width: 60px;
+              height: 60px;
+              border-radius: 10px;
+              margin: 0px 15px 0px 0px;
+            }
+
+            .reviews-slider__review__author-name {
+              font-size: $large-paragraph-fs;
+              line-height: $large-paragraph-lh;
+              font-weight: 700;
+            }
+            .reviews-slider__review__author-place {
+              font-size: $small-paragraph-fs;
+              line-height: $small-paragraph-lh;
+            }
           }
         }
       }
-      .carousel-control-prev {
-        .carousel-control-prev-icon {
+      .slick-dots {
+        position: absolute;
+        top: 75%;
+        left: 101%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 16px;
+          height: 16px;
+          margin: 20px;
+          padding: 0;
+          cursor: pointer;
+          border-radius: 50%;
+
+          button {
+            font-size: 0;
+            line-height: 0;
+            padding: 0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 0;
+            color: transparent;
+            outline: none;
+            background-color: white;
+            opacity: 0.3;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+          }
         }
-      }
-      .carousel-control-next {
-        .carousel-control-next-icon {
+        .slick-active {
+          button {
+            opacity: 1;
+          }
         }
       }
     }
