@@ -1,10 +1,13 @@
 .reviews-container {
   background-color: #1fc072;
   color: white;
-  background-image: linear-gradient(to top, rgba(31, 192, 114, 0.96), rgba(31, 192, 114, 0.96)), url("../img/reviews-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom center;
+  background-image: linear-gradient(to top, rgba(31, 192, 114, 0.97), rgba(31, 192, 114, 0.97)), url("../img/reviews-bg.jpg");
+  background-position: center;
   background-size: 100%;
+  background-repeat: no-repeat;
+}
+.reviews-container .reviews-container__reviews {
+  padding: 0px 40px;
 }
 .reviews-container .reviews-container__reviews .reviews-slider {
   padding: 0px 70px 0px 0px;
@@ -17,15 +20,24 @@
   align-items: center;
 }
 .reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide {
-  background-color: #1e9b5f;
-  padding: 25px 30px 30px 30px;
+  background-color: white;
+  padding: 30px;
   border-radius: 10px;
+  color: #1c1c1c;
 }
 .reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__text {
   display: block;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 0px 0px 30px 0px;
 }
 .reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__text i {
   font-size: 22px;
+  color: #cfcfcf;
 }
 .reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__text i:first-child {
   display: inline;
@@ -36,15 +48,7 @@
   margin: 0px 0px 0px 10px;
   vertical-align: sub;
 }
-.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__divider {
-  width: 100%;
-  height: 1px;
-  background-color: white;
-  opacity: 0.3;
-  margin: 25px 0px 30px 0px;
-}
 .reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__author-img {
-  background-image: url("../img/user-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -53,21 +57,48 @@
   border-radius: 10px;
   margin: 0px 15px 0px 0px;
 }
+.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide #author-one {
+  background-image: url("../img/user-1.jpg");
+}
+.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide #author-two {
+  background-image: url("../img/user-2.jpg");
+}
+.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide #author-three {
+  background-image: url("../img/user-3.jpg");
+}
+.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide #author-four {
+  background-image: url("../img/user-4.jpg");
+}
+.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide #author-five {
+  background-image: url("../img/user-5.jpg");
+}
 .reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__author-name {
   font-size: 22px;
-  line-height: 32px;
+  line-height: 28px;
   font-weight: 700;
 }
-.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__author-place {
-  font-size: 16px;
-  line-height: 22px;
+.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__author-term {
+  font-size: 18px;
+  line-height: 28px;
+  color: #808080;
+  display: inline;
+}
+.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__author-term span {
+  color: #1fc072;
+  display: inline;
+}
+.reviews-container .reviews-container__reviews .reviews-slider .slick-list .slick-track .slick-slide .reviews-slider__review__mark {
+  text-align: right;
+  color: #ffd524;
+  font-size: 18px;
 }
 .reviews-container .reviews-container__reviews .reviews-slider .slick-dots {
   position: absolute;
-  top: 75%;
-  left: 101%;
+  top: 50%;
+  bottom: 50%;
+  left: 97%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -79,9 +110,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
-  margin: 20px;
+  width: 10px;
+  height: 10px;
+  margin: 15px;
   padding: 0;
   cursor: pointer;
   border-radius: 50%;
@@ -90,8 +121,8 @@
   font-size: 0;
   line-height: 0;
   padding: 0;
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   cursor: pointer;
   border: 0;
@@ -105,16 +136,39 @@
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.reviews-container .reviews-container__reviews .reviews-slider .slick-dots .slick-active {
+  width: 16px;
+  height: 16px;
+}
 .reviews-container .reviews-container__reviews .reviews-slider .slick-dots .slick-active button {
   opacity: 1;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
 }
-.reviews-container .reviews-container__headline {
+.reviews-container .reviews-container__text {
+  padding: 0px 0px 0px 70px;
+}
+.reviews-container .reviews-container__text .reviews-container__text__preheadline {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin: 0px 0px 45px 5px;
+  color: #1c1c1c;
+}
+.reviews-container .reviews-container__text .reviews-container__text__preheadline span {
+  border-bottom: 2px solid #ffd524;
+}
+.reviews-container .reviews-container__text .reviews-container__text__headline {
   font-size: 50px;
   line-height: 56px;
   font-weight: 700;
   text-transform: capitalize;
+  font-family: "SF Old Republic", sans-serif;
 }
-.reviews-container .reviews-container__headline span {
+.reviews-container .reviews-container__text .reviews-container__text__headline span {
   font-size: 72px;
 }
 

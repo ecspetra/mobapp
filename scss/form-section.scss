@@ -1,0 +1,46 @@
+@import "tmp.scss";
+
+.form-container {
+  .form-container__form {
+    padding: 0px 80px 0px 0px;
+
+    .form-container__form__text {
+      text-align: right;
+    }
+    .form-container__form__text__headline {
+      font-size: $med-headline-fs;
+      line-height: $med-headline-lh;
+      font-weight: 700;
+      text-transform: capitalize;
+      font-family: "SF Old Republic", sans-serif;
+
+      span {
+        color: $color-accent;
+      }
+    }
+    .form-container__form__text__paragraph {
+      color: $paragraph-color;
+      font-size: $small-paragraph-fs;
+      line-height: $small-paragraph-lh;
+      font-weight: 400;
+      margin: 45px 0px 55px 0px;
+    }
+    .form-container__form__input-block {
+      background-color: white;
+      -webkit-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+      -moz-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+      box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+      border-radius: 32px;
+      color: $paragraph-color;
+    }
+  }
+  .form-container__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    svg {
+      max-width: 460px;
+      height: auto;
+    }
+  }
+}

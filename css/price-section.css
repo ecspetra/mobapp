@@ -1,0 +1,84 @@
+.price-container {
+  padding: 100px 40px 0px 40px;
+}
+.price-container .price-container__headline {
+  text-align: center;
+  font-size: 42px;
+  line-height: 44px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "SF Old Republic", sans-serif;
+  margin: 0px 0px 70px 0px;
+}
+.price-container .price-container__headline span {
+  color: #1fc072;
+}
+.price-container .price-container__item {
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+  -moz-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+  box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  background-image: url("../img/price-item-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.price-container .price-container__item .price-container__item__title {
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #1fc072;
+}
+.price-container .price-container__item .price-container__item__price {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 60px 0px 45px 0px;
+}
+.price-container .price-container__item .price-container__item__price span {
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "SF Old Republic", sans-serif;
+}
+.price-container .price-container__item .price-container__item__description .price-container__item__description__point {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.price-container .price-container__item .price-container__item__description .price-container__item__description__point i {
+  font-size: 22px;
+  color: #1fc072;
+  margin: 0px 5px 0px 0px;
+}
+.price-container .price-container__item .price-container__item__cta {
+  margin: 40px 0px 0px 0px;
+}
+.price-container .minimal-package {
+  border-top: 8px solid #cfcfcf;
+}
+.price-container .minimal-package .price-container__item__title {
+  color: #808080;
+}
+.price-container .standard-package {
+  border-top: 8px solid #1fc072;
+  padding: 55px 30px 60px 30px;
+}
+.price-container .standard-package .price-container__item__title {
+  color: #1fc072;
+}
+.price-container .professional-package {
+  border-top: 8px solid #ffd524;
+}
+.price-container .professional-package .price-container__item__title {
+  color: #ffd524;
+}
+.price-container .not-available {
+  color: #cfcfcf !important;
+}
+
+/*# sourceMappingURL=price-section.css.map */

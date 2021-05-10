@@ -1,0 +1,64 @@
+.footer-container {
+  background-color: #1fc072;
+  color: white;
+}
+.footer-container .footer-container__content {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0px 40px;
+}
+.footer-container .footer-container__content .footer-container__content__logo svg {
+  width: 160px;
+  height: auto;
+}
+.footer-container .footer-container__content .footer-container__content__navigation .footer-container__content__navigation__item {
+  margin: 10px 0px;
+}
+.footer-container .footer-container__content .footer-container__content__navigation .footer-container__content__navigation__item a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-container .footer-container__content .footer-container__content__navigation .footer-container__content__navigation__item a:hover {
+  background-color: #1e9b5f;
+}
+.footer-container .footer-container__content .footer-container__content__navigation .footer-container__content__navigation__item-social {
+  font-size: 32px;
+  margin: 40px 0px 0px 0px;
+}
+.footer-container .footer-container__content .footer-container__content__navigation .footer-container__content__navigation__item-social .social-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+.footer-container .footer-container__content .footer-container__content__navigation .footer-container__content__navigation__item-social .social-icon i {
+  align-self: center;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.footer-container .footer-container__content .footer-container__content__navigation .footer-container__content__navigation__item-social .social-icon i:hover {
+  color: #1c1c1c;
+}
+.footer-container .footer-container__content .footer-container__content__author {
+  padding: 10px 0px;
+  text-align: right;
+}
+.footer-container .footer-container__content .footer-container__content__author:before {
+  content: " ";
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  width: 1px;
+  height: 166px;
+  float: left;
+  margin: 10px 0px 0px 0px;
+}
+
+/*# sourceMappingURL=footer-section.css.map */

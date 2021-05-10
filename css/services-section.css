@@ -2,9 +2,8 @@
   text-align: center;
 }
 .services-container .services-container__text-block .services-container__text-block__preheadline {
-  color: #808080;
   font-size: 22px;
-  line-height: 32px;
+  line-height: 28px;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 700;
@@ -16,12 +15,14 @@
   line-height: 44px;
   font-weight: 700;
   text-transform: capitalize;
+  font-family: "SF Old Republic", sans-serif;
 }
 .services-container .services-container__text-block .services-container__text-block__paragraph {
   color: #808080;
   font-size: 22px;
-  line-height: 32px;
+  line-height: 28px;
   margin: 45px 0px 60px 0px;
+  font-weight: 400;
 }
 .services-container .services-container__services .services-container__services__item .services__item__content {
   background-color: white;
@@ -61,13 +62,15 @@
 }
 .services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__headline {
   font-size: 22px;
+  line-height: 28px;
   font-weight: 700;
-  margin: 30px 0px 20px 0px;
+  margin: 30px 0px 15px 0px;
 }
 .services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__paragraph {
   color: #808080;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
 }
 .services-container .services-container__services .services-container__services__item:nth-child(2) .services__item__content__icon {
   background-color: #ff5c45;
@@ -92,6 +95,74 @@
 }
 .services-container .services-container__services .services-container__services__item:hover .services__item__content .services__item__content__paragraph {
   color: white;
+}
+
+@media (max-width: 1280px) {
+  .services-container {
+    padding: 0px 20px 100px 20px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__preheadline {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 0px 45px 0px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__headline {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__paragraph {
+    color: #808080;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 45px 0px 60px 0px;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content {
+    padding: 20px;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__headline {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 0px 10px 0px;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__paragraph {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .services-container {
+    padding: 0px 20px 70px 20px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__preheadline {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 0px 45px 0px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__headline {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__paragraph {
+    color: #808080;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 45px 0px 60px 0px;
+  }
+  .services-container .services-container__services .services-container__services__item {
+    padding: 0;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content {
+    padding: 20px;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__headline {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 0px 10px 0px;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__paragraph {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 /*# sourceMappingURL=services-section.css.map */

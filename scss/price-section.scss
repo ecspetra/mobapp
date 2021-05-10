@@ -1,0 +1,89 @@
+@import "tmp.scss";
+
+.price-container {
+  padding: 100px 40px 0px 40px;
+  .price-container__headline {
+    text-align: center;
+    font-size: $med-headline-fs;
+    line-height: $med-headline-lh;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "SF Old Republic", sans-serif;
+    margin: 0px 0px 70px 0px;
+
+    span {
+      color: $color-accent;
+    }
+  }
+  .price-container__item {
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+    -moz-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+    box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    background-image: url("../img/price-item-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .price-container__item__title {
+      font-size: $large-paragraph-fs;
+      line-height: $large-paragraph-lh;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 700;
+      color: $color-accent;
+    }
+    .price-container__item__price {
+      font-size: $large-paragraph-fs;
+      line-height: $large-paragraph-lh;
+      font-weight: 700;
+      margin: 60px 0px 45px 0px;
+
+      span {
+        font-size: $price-fs;
+        font-weight: 700;
+        font-family: "SF Old Republic", sans-serif;
+      }
+    }
+    .price-container__item__description {
+      .price-container__item__description__point {
+        margin: 10px 0px;
+        font-size: $small-paragraph-fs;
+        line-height: $small-paragraph-lh;
+        font-weight: 700;
+        i {
+          font-size: 22px;
+          color: $color-accent;
+          margin: 0px 5px 0px 0px;
+        }
+      }
+    }
+    .price-container__item__cta {
+      margin: 40px 0px 0px 0px;
+    }
+  }
+  .minimal-package {
+    border-top: 8px solid $dark-gray;
+    .price-container__item__title {
+      color: $paragraph-color;
+    }
+  }
+  .standard-package {
+    border-top: 8px solid $color-accent;
+    padding: 55px 30px 60px 30px;
+    .price-container__item__title {
+      color: $color-accent;
+    }
+  }
+  .professional-package {
+    border-top: 8px solid $color-accent-3;
+    .price-container__item__title {
+      color: $color-accent-3;
+    }
+  }
+  .not-available {
+    color: $dark-gray !important;
+  }
+}
