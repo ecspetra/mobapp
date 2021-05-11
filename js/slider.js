@@ -9,5 +9,14 @@ $(document).ready(function () {
     speed: 300,
     fade: true,
     cssEase: "linear",
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          adaptiveHeight: true,
+        },
+      },
+    ],
   });
 });

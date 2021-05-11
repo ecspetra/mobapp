@@ -24,6 +24,14 @@
   margin: 45px 0px 60px 0px;
   font-weight: 400;
 }
+.services-container .services-container__services {
+  align-items: stretch !important;
+}
+.services-container .services-container__services .services-container__services__item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .services-container .services-container__services .services-container__services__item .services__item__content {
   background-color: white;
   -webkit-box-shadow: 0px 4px 40px -10px rgba(28, 28, 28, 0.2);
@@ -99,7 +107,39 @@
 
 @media (max-width: 1280px) {
   .services-container {
-    padding: 0px 20px 100px 20px;
+    padding: 0px 40px 80px 40px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__preheadline {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px 0px 45px 0px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__headline {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .services-container .services-container__text-block .services-container__text-block__paragraph {
+    color: #808080;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 45px 0px 60px 0px;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content {
+    padding: 20px;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__headline {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 30px 0px 10px 0px;
+  }
+  .services-container .services-container__services .services-container__services__item .services__item__content .services__item__content__paragraph {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  .services-container {
+    padding: 0px 40px 70px 40px;
   }
   .services-container .services-container__text-block .services-container__text-block__preheadline {
     font-size: 18px;
@@ -149,6 +189,7 @@
     margin: 45px 0px 60px 0px;
   }
   .services-container .services-container__services .services-container__services__item {
+    justify-content: center;
     padding: 0;
   }
   .services-container .services-container__services .services-container__services__item .services__item__content {

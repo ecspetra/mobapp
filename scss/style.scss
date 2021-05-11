@@ -4,6 +4,7 @@
 body {
   font-family: "Proxima Nova Rg", sans-serif;
   color: $basic-color;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -181,62 +182,6 @@ input:focus {
   border: 2px solid $color-accent !important;
 }
 
-@media (max-width: 1024px) {
-  .wrapper__container {
-    padding: 100px 20px;
-  }
-  .cta-button {
-    height: 48px;
-    font-size: $btn-small-fs;
-    line-height: $btn-small-lh;
-    border-radius: 24px;
-
-    i {
-      font-size: 16px;
-    }
-  }
-
-  .form-container__form__input-block__send-btn {
-    height: 48px;
-    padding: 0px 30px;
-    font-size: $btn-small-fs;
-    line-height: $btn-small-lh;
-    border-radius: 24px;
-
-    i {
-      font-size: 16px;
-    }
-  }
-}
-
-@media (max-width: 1280px) {
-  .wrapper__container {
-    padding: 100px 20px;
-  }
-  .cta-button {
-    height: 48px;
-    font-size: $btn-small-fs;
-    line-height: $btn-small-lh;
-    border-radius: 24px;
-
-    i {
-      font-size: 16px;
-    }
-  }
-
-  .form-container__form__input-block__send-btn {
-    height: 48px;
-    padding: 0px 30px;
-    font-size: $btn-small-fs;
-    line-height: $btn-small-lh;
-    border-radius: 24px;
-
-    i {
-      font-size: 16px;
-    }
-  }
-}
-
 .divider-container {
   padding: 0px 40px;
   .divider-container__line {
@@ -246,145 +191,7 @@ input:focus {
   }
 }
 
-.hero-container {
-  padding: 220px 40px 100px 40px;
-  .hero-container__text {
-    padding: 0px 80px 0px 0px;
-    .hero-container__text__headline {
-      font-size: $large-headline-fs;
-      line-height: $large-headline-lh;
-      font-weight: 700;
-      text-transform: capitalize;
-      font-family: "SF Old Republic", sans-serif;
-
-      span {
-        font-size: 72px;
-        color: $color-accent;
-      }
-    }
-    .hero-container__text__paragraph {
-      font-size: $large-paragraph-fs;
-      line-height: $large-paragraph-lh;
-      font-weight: 400;
-      color: $paragraph-color;
-      margin: 40px 0px 50px 0px;
-    }
-    .hero-container__text__cta {
-    }
-    .hero-container__text__more-btn {
-    }
-  }
-  .hero-container__img {
-    display: flex;
-    justify-content: flex-end;
-    svg {
-      max-width: 600px;
-      height: auto;
-    }
-  }
-}
-
-@media (max-width: 1280px) {
-  .hero-container {
-    padding: 160px 20px;
-    .hero-container__text {
-      padding: 0px;
-      .hero-container__text__headline {
-        font-size: $large-headline-small-fs;
-        line-height: $large-headline-small-lh;
-        span {
-          font-size: 48px;
-        }
-      }
-      .hero-container__text__paragraph {
-        font-size: $large-paragraph-small-fs;
-        line-height: $large-paragraph-small-lh;
-        margin: 30px 0px 40px 0px;
-      }
-      .hero-container__text__cta {
-      }
-      .hero-container__text__more-btn {
-      }
-    }
-    .hero-container__img {
-      svg {
-        max-width: 500px;
-        height: auto;
-      }
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero-container {
-    padding: 160px 20px;
-    .hero-container__text {
-      padding: 0px;
-      .hero-container__text__headline {
-        span {
-        }
-      }
-      .hero-container__text__paragraph {
-      }
-      .hero-container__text__cta {
-      }
-      .hero-container__text__more-btn {
-      }
-    }
-    .hero-container__img {
-      padding: 0px 0px 0px 40px;
-      svg {
-        max-width: 500px;
-        height: auto;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-container {
-    padding: 100px 20px 60px 20px;
-    text-align: center;
-    .hero-container__text {
-      padding: 0px;
-      .hero-container__text__headline {
-        font-size: $large-headline-small-fs;
-        line-height: $large-headline-small-lh;
-        span {
-        }
-      }
-      .hero-container__text__paragraph {
-      }
-      .hero-container__text__cta {
-      }
-      .hero-container__text__more-btn {
-      }
-    }
-    .hero-container__img {
-      padding: 0px 0px 40px 0px;
-      svg {
-        max-width: 500px;
-        height: auto;
-      }
-    }
-  }
-}
-
-.splide {
-  .splide__arrows {
-    .splide__arrow {
-      svg {
-        display: none;
-      }
-    }
-  }
-  .splide__track {
-  }
-  .splide__pagination {
-    left: 0 !important;
-  }
-}
-
+@import "hero-section.scss";
 @import "services-section.scss";
 @import "advantages-section.scss";
 @import "reviews-section.scss";

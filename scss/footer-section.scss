@@ -1,8 +1,12 @@
 @import "tmp.scss";
 
-.footer-container {
+.footer-bg {
   background-color: $color-accent;
+}
+
+.footer-container {
   color: white;
+  padding: 80px 0px;
 
   .footer-container__content {
     font-size: $small-paragraph-fs;
@@ -55,7 +59,7 @@
       }
     }
     .footer-container__content__author {
-      padding: 10px 0px;
+      padding-top: 10px;
       text-align: right;
     }
     .footer-container__content__author:before {
@@ -65,6 +69,150 @@
       height: 166px;
       float: left;
       margin: 10px 0px 0px 0px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer-container {
+    padding: 80px 0px;
+    .footer-container__content {
+      font-size: $small-paragraph-small-fs;
+      line-height: $small-paragraph-small-lh;
+      padding: 0px 40px;
+      .footer-container__content__logo {
+        svg {
+          width: 130px;
+          height: auto;
+        }
+      }
+      .footer-container__content__navigation {
+        .footer-container__content__navigation__item {
+          margin: 10px 0px;
+          a {
+            &:hover {
+            }
+          }
+        }
+      }
+
+      .footer-container__content__navigation__item-social {
+        font-size: 28px;
+        margin: 40px 0px 0px 0px;
+        .social-icon {
+          i {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+    .footer-container__content__author {
+      padding-top: 10px;
+      text-align: right;
+    }
+    .footer-container__content__author:before {
+      content: " ";
+      border-left: 1px solid rgba(255, 255, 255, 0.4);
+      width: 1px;
+      height: 140px;
+      float: left;
+      margin: 10px 0px 0px 0px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 80px 0px;
+    .footer-container__content {
+      font-size: $small-paragraph-small-fs;
+      line-height: $small-paragraph-small-lh;
+      padding: 0px 40px;
+      .footer-container__content__logo {
+        svg {
+          width: 130px;
+          height: auto;
+        }
+      }
+      .footer-container__content__navigation {
+        .footer-container__content__navigation__item {
+          margin: 10px 0px;
+          a {
+            &:hover {
+            }
+          }
+        }
+        .footer-container__content__navigation__item-social {
+          font-size: 28px;
+          margin: 40px 0px 0px 0px;
+          .social-icon {
+            i {
+              &:hover {
+              }
+            }
+          }
+        }
+      }
+      .footer-container__content__author {
+        padding-top: 10px;
+        text-align: right;
+      }
+      .footer-container__content__author:before {
+        content: " ";
+        border-left: 1px solid rgba(255, 255, 255, 0.4);
+        width: 1px;
+        height: 140px;
+        float: left;
+        margin: 10px 0px 0px 0px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 80px 0px;
+    text-align: center;
+    .footer-container__content {
+      font-size: $small-paragraph-small-fs;
+      line-height: $small-paragraph-small-lh;
+      padding: 0px 20px;
+      .footer-container__content__logo {
+        margin: 0px 0px 40px 0px;
+        svg {
+          width: 130px;
+          height: auto;
+        }
+      }
+      .footer-container__content__navigation {
+        .footer-container__content__navigation__item {
+          margin: 10px 0px;
+          a {
+            &:hover {
+            }
+          }
+        }
+        .footer-container__content__navigation__item:first-child {
+          margin: 0px;
+        }
+      }
+      .footer-container__content__navigation__item-social {
+        font-size: 28px;
+        margin: 40px 0px 0px 0px;
+        .social-icon {
+          justify-content: center !important;
+          i {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+    .footer-container__content__author {
+      padding-top: 40px !important;
+      text-align: center !important;
+    }
+    .footer-container__content__author:before {
+      display: none;
     }
   }
 }
