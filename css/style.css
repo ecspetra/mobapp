@@ -1810,6 +1810,19 @@ input:focus {
   }
   .form-container .form-container__form .form-container__form__input-block {
     border-radius: 32px;
+    box-shadow: none;
+  }
+  .form-container .form-container__form .form-container__form__input-block .input-group input {
+    display: block;
+    width: 100%;
+    border-radius: 32px !important;
+    height: 48px;
+  }
+  .form-container .form-container__form .form-container__form__input-block .input-group button {
+    margin: 20px 0px 0px 0px;
+    display: block;
+    width: 100%;
+    border-radius: 32px !important;
   }
   .form-container .form-container__img {
     display: flex;
