@@ -183,6 +183,7 @@ template {
 body {
   font-family: "Proxima Nova Rg", sans-serif;
   color: #1c1c1c;
+  overflow-x: hidden;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
