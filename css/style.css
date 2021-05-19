@@ -2011,7 +2011,8 @@ input:focus {
   border-bottom: 1px solid #dddddd;
 }
 .menu-wrapper .menu-container {
-  padding: 0px 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .menu-wrapper .menu-container .menu-container__logo svg {
   width: 160px;
