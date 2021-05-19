@@ -9,7 +9,7 @@
     font-weight: 700;
     text-transform: capitalize;
     font-family: "SF Old Republic", sans-serif;
-    margin: 0px 0px 70px 0px;
+    margin: 0px 0px 50px 0px;
 
     span {
       color: $color-accent;
@@ -90,7 +90,7 @@
 
 @media (max-width: 1280px) {
   .price-container {
-    padding: 70px 40px 0px 40px;
+    padding: 90px 40px 0px 40px;
     .price-container__headline {
       font-size: $med-headline-small-fs;
       line-height: $med-headline-small-lh;
@@ -149,7 +149,7 @@
 }
 @media (max-width: 1024px) {
   .price-container {
-    padding: 70px 40px 0px 40px;
+    padding: 90px 40px 0px 40px;
     .price-container__headline {
       font-size: $med-headline-small-fs;
       line-height: $med-headline-small-lh;
@@ -208,7 +208,7 @@
 }
 @media (max-width: 768px) {
   .price-container {
-    padding: 70px 20px 0px 20px;
+    padding: 90px 20px 0px 20px;
     .price-container__headline {
       font-size: $med-headline-small-fs;
       line-height: $med-headline-small-lh;
